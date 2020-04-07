@@ -13,6 +13,7 @@ import javax.sql.DataSource;
 import org.skife.jdbi.v2.DBI;
 
 
+@SuppressWarnings("ALL")
 public class DropwizardMySQLApplication extends Application<DropwizardMySQLConfiguration> {
 
     private static final Logger logger = LoggerFactory.getLogger(DropwizardMySQLApplication.class);

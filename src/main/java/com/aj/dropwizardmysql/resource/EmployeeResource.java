@@ -40,7 +40,7 @@ public class EmployeeResource {
     @POST
     @Timed
     public Response createEmployee(@NotNull @Valid final Employee employee) {
-        Employee employeeCreate = new Employee(employee.getName(),employee.getDepartment(),employee.getSalary());
+        Employee employeeCreate = new Employee(employee.getName(), employee.getDepartment() ,employee.getSalary());
         return Response.ok(employeeService.createEmployee(employeeCreate)).build();
     }
 
